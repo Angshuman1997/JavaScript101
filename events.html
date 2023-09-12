@@ -1,0 +1,59 @@
+<!-- In JavaScript, events are actions or occurrences that happen within a web page. These can be triggered by users or by the browser itself. Events allow you to create interactive and responsive web pages by executing code when specific actions take place. -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Styling for the mouseover example */
+      #myDiv {
+        width: 200px;
+        height: 100px;
+        background-color: lightblue;
+        text-align: center;
+        line-height: 100px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="myButton">Click me</button>
+    <div id="myDiv">Hover over me</div>
+    <input type="text" id="textInput" placeholder="Type something" />
+    <form id="myForm">
+      <input type="text" name="username" placeholder="Username" />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <script>
+      // Click Event
+      const button = document.getElementById("myButton");
+      button.addEventListener("click", function () {
+        alert("Button clicked!");
+      });
+
+      // Mouseover Event
+      const div = document.getElementById("myDiv");
+      div.addEventListener("mouseover", function () {
+        div.style.backgroundColor = "yellow";
+      });
+
+      // Keydown Event
+      const textInput = document.getElementById("textInput");
+      textInput.addEventListener("keydown", function (event) {
+        console.log(`Key pressed: ${event.key}`);
+      });
+
+      // Submit Event
+      const form = document.getElementById("myForm");
+      form.addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevents the default form submission
+        console.log("Form submitted");
+      });
+
+      // Load Event
+      window.addEventListener("load", function () {
+        console.log("Page loaded");
+      });
+    </script>
+  </body>
+</html>

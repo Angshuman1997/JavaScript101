@@ -1,0 +1,15 @@
+How JavaScript works ?
+
+In JavaScript, the work process happens based on the execution context which is an abstract concept that helps manage the execution of code.
+
+Before the code execution, a memory allocation process happens where all the variables and functions are declared. "undefined" value is alloted to the variables and for functions the whole function object is alloted.
+
+After that the code execution process happens.
+
+Whenever a new type of scope (function or block) are executed another execution contexts are formed.
+
+All the execution context are put into a call stack in LIFO formate.
+
+In the code execution whenever a variable is assigned to a new value in the memory allocation the variables value changes.
+
+After every completion of a execution context, it is removed from the call stack.

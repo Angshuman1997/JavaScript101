@@ -1,0 +1,3 @@
+JavaScript is a scripting language for creating dynamic web page content. It makes elements for 
+improving site visitors' interaction with web pages, such as dropdown menus, animated graphics, 
+and vibrant background colours.

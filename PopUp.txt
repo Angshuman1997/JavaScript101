@@ -1,0 +1,25 @@
+Alert Box
+alert("Hello, this is an alert message!");
+// Displays a message with an "OK" button. Used for showing information or alerts.
+
+Confirm Box
+const confirmed = confirm("Do you want to proceed?");
+if (confirmed) {
+  // User clicked "OK"
+  console.log("User confirmed.");
+} else {
+  // User clicked "Cancel"
+  console.log("User canceled.");
+}
+// Displays a message with "OK" and "Cancel" buttons. Used for getting user confirmation.
+
+Prompt Box
+const userInput = prompt("Please enter your name:");
+if (userInput !== null) {
+  // User clicked "OK" and provided input
+  console.log(`Hello, ${userInput}!`);
+} else {
+  // User clicked "Cancel" or left the input field blank
+  console.log("User canceled the prompt.");
+}
+// Displays a message and an input field. Used for getting user input.

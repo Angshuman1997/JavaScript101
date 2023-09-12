@@ -1,0 +1,42 @@
+Cookies: 
+Cookies are small pieces of data that are stored in the user's browser. They are often used to store information that needs to persist across different requests or sessions. Cookies have an expiration date and can be accessed by both the client-side and server side.
+
+// Setting a cookie
+document.cookie = "username=John Doe; expires=Sun, 12 Dec 2023 12:00:00 UTC; path=/";
+
+// Retrieving a cookie
+const cookies = document.cookie.split("; ");
+for (const cookie of cookies) {
+  const [name, value] = cookie.split("=");
+  console.log(name, value); // Output: username John Doe
+}
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+Local Storage: 
+Local Storage is a web storage solution that allows you to store key-value pairs directly in the user's browser. The data persists even after the browser is closed and is not sent to the server with each HTTP request.
+
+// Storing data in local storage
+localStorage.setItem("username", "Alice");
+
+// Retrieving data from local storage
+const storedUsername = localStorage.getItem("username");
+console.log(storedUsername); // Output: Alice
+
+// Removing data from local storage
+localStorage.removeItem("username");
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+Session Storage: 
+Session Storage is similar to local storage, but the data is only accessible within the same session or tab. When the tab or browser is closed, the data is deleted.
+
+// Storing data in session storage
+sessionStorage.setItem("theme", "dark");
+
+// Retrieving data from session storage
+const storedTheme = sessionStorage.getItem("theme");
+console.log(storedTheme); // Output: dark
+
+// Clearing all data from session storage
+sessionStorage.clear();

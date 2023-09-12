@@ -1,0 +1,9 @@
+Explain undefined and null.
+
+Undefined: undefined is a primitive value in JavaScript that represents a variable that has been declared but has not been assigned a value. It is the default value for uninitialized variables or variables that have been declared but not assigned any value. 
+
+Example: let x; // x is undefined 
+
+Null: null is also a primitive value in JavaScript. It represents the intentional absence of any value or object. It's often used to explicitly indicate that a variable or object property should have no value. It's different from undefined, which typically indicates an uninitialized variable. 
+
+Example: let y = null; // y is explicitly set to null 

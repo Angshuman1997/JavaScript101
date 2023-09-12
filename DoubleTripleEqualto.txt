@@ -1,0 +1,6 @@
+Difference between “ == “ and “ === “ operators.
+
+Both are used for comparison purposes.
+
+var x = 2; // Returns true since the value of both x and y is the same (x === y)
+var y = "2"; (x == y) // Returns false since the typeof x is "number" and typeof y is "string"

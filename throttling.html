@@ -1,0 +1,41 @@
+<!-- Throttling is a technique used in JavaScript to control the rate at which a particular function or action is executed, especially in response to events like scroll, resize, or user interactions such as button clicks. Throttling ensures that the function is called at a steady, controlled interval, even if the event triggering it fires multiple times in rapid succession. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Throttling Example with Button Click</title>
+</head>
+<body>
+  <h1>Throttling Example with Button Click</h1>
+  <button id="throttle-button">Click Me</button>
+  <p>Throttle Output: <span id="throttle-output"></span></p>
+
+  <script>
+    const throttleButton = document.getElementById("throttle-button");
+    const throttleOutput = document.getElementById("throttle-output");
+    
+    function throttle(fn, delay) {
+      let canRun = true;
+      return function () {
+        if (canRun) {
+          canRun = false;
+          fn.apply(this, arguments);
+          throttleButton.disabled = true; // Disable the button
+          setTimeout(() => {
+            canRun = true;
+            throttleButton.disabled = false; // Enable the button after the delay
+          }, delay);
+        }
+      };
+    }
+    
+    function handleThrottleClick() {
+      throttleOutput.innerText = "Button Clicked!";
+    }
+    
+    throttleButton.addEventListener("click", throttle(handleThrottleClick, 1000)); // Throttle to 1 second (1000 milliseconds)
+  </script>
+</body>
+</html>

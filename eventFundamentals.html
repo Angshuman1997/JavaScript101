@@ -1,0 +1,77 @@
+<!-- Event Capturing:
+Event capturing is the phase where the event travels from the root of the DOM tree down to the target element.
+It is triggered by specifying "true" as the third argument in addEventListener. -->
+
+<!-- Event Bubbling:
+Event bubbling is the phase where the event travels from the target element up to the root of the DOM tree.
+It is the default behavior when the third argument in addEventListener is omitted or set to "false." -->
+
+
+<!-- Event Propagation:
+Event propagation is the combination of event capturing and event bubbling phases. -->
+
+<!-- Event Delegation:
+Event delegation is a technique where you attach a single event listener to a common ancestor of multiple elements and then use conditional logic to determine which specific element triggered the event. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Handling Examples</title>
+  </head>
+  <body>
+    <h1>Event Handling Examples</h1>
+
+    <!-- Event Capturing and Bubbling -->
+    <div id="parent">
+      <div id="child">Click me!</div>
+    </div>
+
+    <!-- Event Propagation -->
+    <script>
+      document.getElementById("parent").addEventListener(
+        "click",
+        function () {
+          console.log("Capturing: Parent Div");
+        },
+        true
+      );
+
+      document.getElementById("child").addEventListener(
+        "click",
+        function () {
+          console.log("Capturing: Child Div");
+        },
+        true
+      );
+
+      document.getElementById("parent").addEventListener("click", function () {
+        console.log("Bubbling: Parent Div");
+      });
+
+      document.getElementById("child").addEventListener("click", function () {
+        console.log("Bubbling: Child Div");
+      });
+    </script>
+
+    <!-- Event Delegation -->
+    <ul id="list">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+      <li>Item 5</li>
+    </ul>
+
+    <script>
+      document
+        .getElementById("list")
+        .addEventListener("click", function (event) {
+          if (event.target.tagName === "LI") {
+            console.log("Delegated Click: " + event.target.textContent);
+          }
+        });
+    </script>
+  </body>
+</html>
