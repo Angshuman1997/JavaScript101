@@ -1,5 +1,6 @@
 // Spread Operator (...): 
-// Usage: Used to split an array into individual elements or to spread elements as separate arguments. Array Usage: Spreads the elements of an array. 
+// Usage: Used to split an array into individual elements or to 
+// spread elements as separate arguments. Array Usage: Spreads the elements of an array. 
 // Function Call Usage: Spreads array elements as separate arguments.
 
 const numbers = [1, 2, 3, 4];

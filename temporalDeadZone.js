@@ -1,4 +1,6 @@
-// A temporal dead zone is a behaviour that occurs with variables declared using let and const keywords. It is a behaviour where we try to access a variable before it is initialized.
+// A temporal dead zone is a behaviour that occurs with variables declared using 
+// let and const keywords. It is a behaviour where we try to access a variable 
+// before it is initialized.
 
 x = 23; // Gives reference error
 let x;

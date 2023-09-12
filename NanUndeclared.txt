@@ -1,9 +1,16 @@
 Explain Nan, and undeclared. 
 
-NaN (Not-a-Number): NaN is a special value that represents the result of a mathematical operation that cannot be performed, such as dividing zero by zero. It is often the result of trying to perform arithmetic operations on non-numeric values. It's important to note that NaN is not equal to any other value, including itself. 
+NaN (Not-a-Number): NaN is a special value that represents the result of a 
+mathematical operation that cannot be performed, such as dividing zero by zero. 
+It is often the result of trying to perform arithmetic operations on non-numeric 
+values. It's important to note that NaN is not equal to any other value, including itself. 
 
 Example: const result = "hello" / 2; // result is NaN 
 
-Undeclared: An "undeclared" variable is a variable that has been used in code without being explicitly declared using var, let, or const. When you try to use an undeclared variable, JavaScript will treat it as a global variable if strict mode is not enabled, which can lead to unintended behaviour and errors. It's good practice to always declare variables before using them to avoid potential issues. 
+Undeclared: An "undeclared" variable is a variable that has been used in code 
+without being explicitly declared using var, let, or const. When you try to 
+use an undeclared variable, JavaScript will treat it as a global variable if 
+strict mode is not enabled, which can lead to unintended behaviour and errors. 
+It's good practice to always declare variables before using them to avoid potential issues. 
 
 Example: undeclaredVariable = 42; // This creates a global variable if not in strict mode

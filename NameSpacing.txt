@@ -1,6 +1,10 @@
-Namespacing is a technique to prevent naming conflicts in your code by grouping related functions, variables, or objects under a single container. 
+Namespacing is a technique to prevent naming conflicts in your code 
+by grouping related functions, variables, or objects under a single container. 
 
-Example: Suppose you're working on a web application that includes various utility functions. Without namespacing, you might have functions with common names that could lead to conflicts. With namespacing, you can organize these functions within a single namespace to avoid conflicts.
+Example: Suppose you're working on a web application that includes various 
+utility functions. Without namespacing, you might have functions with common 
+names that could lead to conflicts. With namespacing, you can organize these 
+functions within a single namespace to avoid conflicts.
 
 // Without Namespacing (potential conflicts)
 function sayHello() {  console.log("Hello!"); }

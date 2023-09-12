@@ -1,4 +1,6 @@
-// In JavaScript, you can create shallow and deep copies of objects. A shallow copy duplicates the top-level properties of an object, while a deep copy duplicates both the top-level properties and all nested properties, creating completely independent copies.
+// In JavaScript, you can create shallow and deep copies of objects. A shallow copy 
+// duplicates the top-level properties of an object, while a deep copy duplicates both
+//  the top-level properties and all nested properties, creating completely independent copies.
 
 // Shallow Copy Example:
 

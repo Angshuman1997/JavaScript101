@@ -1,5 +1,6 @@
 // for Loop: 
-// The for loop is used to iterate over a sequence of values or elements for a specific number of times.
+// The for loop is used to iterate over a sequence of values or elements 
+// for a specific number of times.
 
 for (let i = 0; i < 5; i++) {
   console.log(i); // Output: 0, 1, 2, 3, 4
@@ -15,7 +16,8 @@ while (j < 5) {
 }
 
 // do...while Loop: 
-// The do...while loop is similar to the while loop, but it ensures that the block of code is executed at least once before checking the condition.
+// The do...while loop is similar to the while loop, but it ensures that the 
+// block of code is executed at least once before checking the condition.
 
 let i = 0;
 do {
@@ -25,7 +27,8 @@ do {
 
 
 // for...of Loop: 
-// The for...of loop is used to iterate over the values of an iterable object (arrays, strings, etc.).
+// The for...of loop is used to iterate over the values of an iterable 
+// object (arrays, strings, etc.).
 
 const colors = ["red", "green", "blue"];
 for (const color of colors) {

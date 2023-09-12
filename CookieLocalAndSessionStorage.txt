@@ -1,5 +1,8 @@
 Cookies: 
-Cookies are small pieces of data that are stored in the user's browser. They are often used to store information that needs to persist across different requests or sessions. Cookies have an expiration date and can be accessed by both the client-side and server side.
+Cookies are small pieces of data that are stored in the user's browser. 
+They are often used to store information that needs to persist across different 
+requests or sessions. Cookies have an expiration date and can be accessed by 
+both the client-side and server side.
 
 // Setting a cookie
 document.cookie = "username=John Doe; expires=Sun, 12 Dec 2023 12:00:00 UTC; path=/";
@@ -11,10 +14,11 @@ for (const cookie of cookies) {
   console.log(name, value); // Output: username John Doe
 }
 
-----------------------------------------------------------------------------------------------------------------------------------------------
-
+-------------------------------------------------------------------------------------------
 Local Storage: 
-Local Storage is a web storage solution that allows you to store key-value pairs directly in the user's browser. The data persists even after the browser is closed and is not sent to the server with each HTTP request.
+Local Storage is a web storage solution that allows you to store key-value pairs 
+directly in the user's browser. The data persists even after the browser is closed 
+and is not sent to the server with each HTTP request.
 
 // Storing data in local storage
 localStorage.setItem("username", "Alice");
@@ -26,10 +30,11 @@ console.log(storedUsername); // Output: Alice
 // Removing data from local storage
 localStorage.removeItem("username");
 
-----------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
 
 Session Storage: 
-Session Storage is similar to local storage, but the data is only accessible within the same session or tab. When the tab or browser is closed, the data is deleted.
+Session Storage is similar to local storage, but the data is only accessible within 
+the same session or tab. When the tab or browser is closed, the data is deleted.
 
 // Storing data in session storage
 sessionStorage.setItem("theme", "dark");

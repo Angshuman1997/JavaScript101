@@ -1,4 +1,6 @@
-// Lexical scoping, or static scoping, means variables are defined based on their position in the source code, not where they are executed. Variables are accessible in their block and nested blocks, but not vice versa.
+// Lexical scoping, or static scoping, means variables are defined based on 
+// their position in the source code, not where they are executed. Variables are
+//  accessible in their block and nested blocks, but not vice versa.
 
 function outer() {
   const outerVar = "I'm from outer";

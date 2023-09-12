@@ -1,5 +1,7 @@
 Passed by Value (Primitives): 
-When you pass a primitive data type (like numbers, strings, booleans) to a function, a copy of the value is made. Changes inside the function do not affect the original value.
+When you pass a primitive data type (like numbers, strings, booleans) 
+to a function, a copy of the value is made. Changes inside the function
+ do not affect the original value.
 
 function modifyValue(val) {
   val = 10;
@@ -12,7 +14,9 @@ console.log(num);   // Output: 5 (unchanged)
 
 
 Passed by Reference (Objects and Arrays): 
-When you pass an object or array to a function, a reference to that object or array is passed. Changes inside the function can affect the original object or array.
+When you pass an object or array to a function, a reference to that object 
+or array is passed. Changes inside the function can affect the original 
+object or array.
 
 function modifyArray(arr) {
   arr.push(4);

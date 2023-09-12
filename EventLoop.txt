@@ -1,13 +1,21 @@
-The event loop is a core concept in JavaScript that handles asynchronous operations and ensures that your code runs efficiently without blocking the execution. It's the mechanism that allows JavaScript to handle tasks like asynchronous callbacks, promises, timers, and I/O operations without freezing the entire program.
+The event loop is a core concept in JavaScript that handles asynchronous operations 
+and ensures that your code runs efficiently without blocking the execution. It's the 
+mechanism that allows JavaScript to handle tasks like asynchronous callbacks, promises,
+timers, and I/O operations without freezing the entire program.
 
 How the Event Loop Works: 
 
-Execution Stack: When a script is executed, the main program starts running and pushes functions onto the execution stack as they are called. 
+Execution Stack: When a script is executed, the main program starts running and pushes 
+functions onto the execution stack as they are called. 
 
-Web APIs: Asynchronous operations like timers, AJAX requests, and DOM events are managed by Web APIs provided by the browser. 
+Web APIs: Asynchronous operations like timers, AJAX requests, and DOM events are managed 
+by Web APIs provided by the browser. 
 
-Message Queue: When these asynchronous tasks are complete, the corresponding callback functions are placed in the message queue. 
+Message Queue: When these asynchronous tasks are complete, the corresponding callback 
+functions are placed in the message queue. 
 
-Event Loop: The event loop continuously monitors the execution stack and the message queue. It takes callbacks from the queue and pushes them onto the execution stack once it's empty. 
+Event Loop: The event loop continuously monitors the execution stack and the message queue. 
+It takes callbacks from the queue and pushes them onto the execution stack once it's empty. 
 
-Execution: The callback function is executed, and if it contains asynchronous code, that code is executed asynchronously (outside of the main program flow).
+Execution: The callback function is executed, and if it contains asynchronous code, 
+that code is executed asynchronously (outside of the main program flow).

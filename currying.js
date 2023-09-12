@@ -1,4 +1,5 @@
-// Currying is an advanced technique to transform a function of arguments n, to n functions of one or fewer arguments.
+// Currying is an advanced technique to transform 
+// a function of arguments n, to n functions of one or fewer arguments.
 
 function add(a) {
   return function (b) {

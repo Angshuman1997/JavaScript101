@@ -1,4 +1,6 @@
-// Callback hell, also known as the "pyramid of doom," refers to a situation in asynchronous programming where multiple nested callbacks make the code hard to read, understand, and maintain. It often occurs when dealing with multiple asynchronous operations that depend on each other's results.
+// Callback hell, also known as the "pyramid of doom," refers to a situation in asynchronous 
+// programming where multiple nested callbacks make the code hard to read, understand, and maintain. 
+// It often occurs when dealing with multiple asynchronous operations that depend on each other's results.
 
 // Example:
 

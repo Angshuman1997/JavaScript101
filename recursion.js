@@ -1,4 +1,5 @@
-// Recursion is when a function calls itself to solve a problem by breaking it down into smaller instances of the same problem.
+// Recursion is when a function calls itself to solve a problem by 
+// breaking it down into smaller instances of the same problem.
 
 function factorial(n) {
   // Base case: factorial of 0 is 1

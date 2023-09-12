@@ -1,6 +1,9 @@
 Can undefined be assigned?
 
-Yes, you can explicitly assign the value undefined to a variable in JavaScript. However, it's more common for the value undefined to be automatically assigned to a variable that has been declared but not initialized with a value. Here's how you can assign undefined to a variable:
+Yes, you can explicitly assign the value undefined to a variable in JavaScript. 
+However, it's more common for the value undefined to be automatically assigned 
+to a variable that has been declared but not initialized with a value. Here's 
+how you can assign undefined to a variable:
 
 let x = undefined; // Explicitly assigning undefined
 

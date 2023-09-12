@@ -1,6 +1,10 @@
-In JavaScript, document and window are important objects that provide access to various properties and methods related to the web page and the browser window. Let's take a closer look at each: 
+In JavaScript, document and window are important objects that provide access to 
+various properties and methods related to the web page and the browser window. 
+Let's take a closer look at each: 
 
-Document Object (document): The document object represents the HTML document that's currently loaded in the browser. It provides a way to manipulate and interact with the content of the web page. 
+Document Object (document): The document object represents the HTML document 
+that's currently loaded in the browser. It provides a way to manipulate and 
+interact with the content of the web page. 
 
 Example usages of the document object:
 
@@ -12,7 +16,8 @@ const newParagraph = document.createElement("p");
 newParagraph.textContent = "This is a new paragraph.";
 document.body.appendChild(newParagraph);
 
-Window Object (window): The window object represents the browser window or tab. It provides access to various properties and methods related to the browser environment. 
+Window Object (window): The window object represents the browser window or tab. 
+It provides access to various properties and methods related to the browser environment. 
 
 Example usages of the window object:
 
@@ -26,6 +31,9 @@ window.alert("Hello, world!");
 const windowWidth = window.innerWidth;
 const windowHeight = window.innerHeight;
 
-One key point to remember is that the window object is the global object in a browser environment. This means that you can often omit the window prefix when accessing its properties and methods. For example, you can use window.alert() or simply alert(). 
+One key point to remember is that the window object is the global object in a browser environment.
+This means that you can often omit the window prefix when accessing its properties and methods. 
+For example, you can use window.alert() or simply alert(). 
 
-Both document and window provide essential features for manipulating the content and behavior of web pages, making them crucial objects when working with JavaScript in the browser.
+Both document and window provide essential features for manipulating the content and behavior of 
+web pages, making them crucial objects when working with JavaScript in the browser.

@@ -1,4 +1,6 @@
-// Object destructuring is a feature in JavaScript that allows you to extract properties from objects and assign them to variables in a more concise and convenient way.
+// Object destructuring is a feature in JavaScript that allows you to 
+// extract properties from objects and assign them to variables in a 
+// more concise and convenient way.
 
 // Example 1:
 // Creating an object

@@ -1,4 +1,6 @@
-// In JavaScript, every object is linked to a prototype object, which serves as a template for the properties and methods an object should have. You can create object prototypes using constructor functions or class syntax.
+// In JavaScript, every object is linked to a prototype object, which serves 
+// as a template for the properties and methods an object should have. You can 
+// create object prototypes using constructor functions or class syntax.
 
 // Creating an Object Prototype using Constructor Function:
 

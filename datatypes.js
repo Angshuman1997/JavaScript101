@@ -65,7 +65,8 @@ const add = function (a, b) {
 // 9. JSON (JavaScript Object Notation)
 const jsonExample = '{"key": "value"}'; // Example of JSON data
 
-// Note: Non-primitive data types reference memory locations, and changes in one variable can affect others that reference the same data.
+// Note: Non-primitive data types reference memory locations, and changes 
+// in one variable can affect others that reference the same data.
 
 console.log(num);
 console.log(str);

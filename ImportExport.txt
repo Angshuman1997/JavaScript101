@@ -1,5 +1,9 @@
-import and export are used to organize and share code between different files or modules. They are a part of the ES6 module system, allowing you to split your code into smaller, manageable pieces. Example:
-Suppose you have two JavaScript files: math.js and app.js. You want to define some math-related functions in math.js and use them in app.js.
+import and export are used to organize and share code between different files or modules. 
+They are a part of the ES6 module system, allowing you to split your code into smaller, manageable pieces. 
+
+Example:
+Suppose you have two JavaScript files: math.js and app.js. You want to define some math-related 
+functions in math.js and use them in app.js.
 
 math.js (Exporting Functions):
 
@@ -26,11 +30,17 @@ console.log(`Cube of ${num}: ${cube(num)}`);
 
 Explanation: 
 
-In math.js, the export keyword is used to make the square and cube functions available for use in other modules. 
-In app.js, the import keyword is used to bring in the specific functions (square and cube) from the math.js module. 
+In math.js, the export keyword is used to make the square and cube functions 
+available for use in other modules. 
+In app.js, the import keyword is used to bring in the specific functions 
+(square and cube) from the math.js module. 
 The syntax { square, cube } within the import statement specifies which functions to import. 
 The ./math.js path refers to the relative path of the math.js file. 
-When you run app.js, it will import and use the functions from math.js, allowing you to perform calculations based on those functions. 
+When you run app.js, it will import and use the functions from math.js, 
+allowing you to perform calculations based on those functions. 
 
-This modular approach helps organize your code and makes it easier to manage and maintain as your project grows. It's important to note that the module system and import/export syntax may require appropriate environment support (e.g., Node.js or modern browsers) or build tools like Webpack or Babel for certain scenarios
+This modular approach helps organize your code and makes it easier to manage and 
+maintain as your project grows. It's important to note that the module system and 
+import/export syntax may require appropriate environment support (e.g., Node.js 
+or modern browsers) or build tools like Webpack or Babel for certain scenarios
 
